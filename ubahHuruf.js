@@ -1,13 +1,14 @@
-var huruf = "abcdefghijklmnopqrstuvwxyz";
+var huruf = "abcdefghijklmnopqrstuvwxyza";
 function ubahHuruf(kata) {
   var output = "";
   for (var i = 0; i < kata.length; i++) {
-    for (var j = 0; j < huruf.length; j++) {
+    for (var j = 0; j < huruf.length - 1; j++) {
       if (kata[i] === huruf[j]) {
         output += huruf[j + 1];
       }
     }
   }
+
   return output;
 }
 
