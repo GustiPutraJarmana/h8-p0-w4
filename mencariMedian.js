@@ -1,5 +1,4 @@
 function cariMedian(arr) {
-  console.log(arr.length);
   if (arr.length % 2 === 0) {
     var posisiM = arr.length / 2;
     return (arr[posisiM] + arr[posisiM - 1]) / 2;
