@@ -1,5 +1,5 @@
 function angkaPrima(angka) {
-  if (angka === 1) {
+  if (angka <= 1) {
     return false;
   } else if (angka === 2) {
     return true;
