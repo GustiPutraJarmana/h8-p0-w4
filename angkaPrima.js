@@ -1,8 +1,6 @@
 function angkaPrima(angka) {
   if (angka <= 1) {
     return false;
-  } else if (angka === 2) {
-    return true;
   } else {
     for (var i = 2; i < angka; i++) {
       if (angka % i === 0) {

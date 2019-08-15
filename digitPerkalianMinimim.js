@@ -7,7 +7,7 @@ function digitPerkalianMinimum(angka) {
       }
     }
   }
-  output = result[0];
+  var output = result[0];
   for (var i = 0; i < result.length / 2; i++) {
     if (Number(output) > Number(result[i])) {
       output = result[i];

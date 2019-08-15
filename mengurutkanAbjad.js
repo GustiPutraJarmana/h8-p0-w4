@@ -4,15 +4,12 @@ function urutkanAbjad(str) {
   for (var i = 0; i < str.length; i++) {
     angka.push(abjad.indexOf(str[i]));
   }
-  var flag = false;
-  while (flag === false) {
-    flag = true;
-    for (var j = 0; j < angka.length; j++) {
-      if (angka[j - 1] > angka[j]) {
-        var tampung = angka[j - 1];
-        angka[j - 1] = angka[j];
-        angka[j] = tampung;
-      }
+
+  for (var j = 0; j < angka.length; j++) {
+    if (angka[j - 1] > angka[j]) {
+      var tampung = angka[j - 1];
+      angka[j - 1] = angka[j];
+      angka[j] = tampung;
     }
   }
   var kata = "";
