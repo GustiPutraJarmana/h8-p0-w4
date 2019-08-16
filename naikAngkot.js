@@ -5,14 +5,14 @@ function naikAngkot(arrPenumpang) {
   }
   var output = [];
   for (var i = 0; i < arrPenumpang.length; i++) {
-    var haragPerSport = 2000;
+    var hargaPerSport = 2000;
     var jarak =
       rute.indexOf(arrPenumpang[i][2]) - rute.indexOf(arrPenumpang[i][1]);
     var Angkotpenumpang = {
       penumpang: arrPenumpang[i][0],
       naikDari: arrPenumpang[i][1],
       tujuan: arrPenumpang[i][2],
-      bayar: jarak * haragPerSport
+      bayar: jarak * hargaPerSport
     };
     output.push(Angkotpenumpang);
   }
