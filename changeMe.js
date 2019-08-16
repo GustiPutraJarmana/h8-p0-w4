@@ -1,4 +1,8 @@
 function changeMe(arr) {
+  if (!arr.length) {
+    console.log('""');
+  }
+  var output = [];
   for (var i = 0; i < arr.length; i++) {
     var age = true;
     if (!arr[i][3] || arr[i][3] > new Date().getFullYear()) {
@@ -6,12 +10,14 @@ function changeMe(arr) {
     } else if (arr[i][3]) {
       age = new Date().getFullYear() - arr[i][3];
     }
+    var nama = [i + 1] + ". " + arr[i][0] + " " + arr[i][1] + ":";
     var people = {
       firstName: arr[i][0],
       lastName: arr[i][1],
       gender: arr[i][2],
       age: age
     };
+    console.log(nama);
     console.log(people);
   }
 }
