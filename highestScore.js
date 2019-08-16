@@ -1,6 +1,6 @@
 function highestScore(students) {
   if (!students.length) {
-    return [];
+    return {};
   }
 
   var output = {};
